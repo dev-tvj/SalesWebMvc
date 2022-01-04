@@ -4,4 +4,15 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Views\Departments\**" />
+    <Content Remove="Views\Departments\**" />
+    <EmbeddedResource Remove="Views\Departments\**" />
+    <None Remove="Views\Departments\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\DepartmentsController.cs" />
+  </ItemGroup>
+
 </Project>
