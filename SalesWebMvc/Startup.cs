@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SalesWebMvc.Data;
+using SalesWebMvc.Services;
 
 namespace SalesWebMvc
 {
@@ -30,6 +31,8 @@ namespace SalesWebMvc
             services.AddControllersWithViews();
 
             services.AddScoped<SeedingService>();
+
+            services.AddScoped<SellerService>();
 
         }
 
